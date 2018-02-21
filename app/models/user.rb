@@ -3,6 +3,8 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  has_attached_file :image, styles: { small: "64x64", med: "100x100", large: "200x200" }
+  has_attached_file :image, 
+      :styles => { :medium => "300x300>" }, 
+      :default_url => "/images/:style/missing.png" # <= you see ?
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 end
