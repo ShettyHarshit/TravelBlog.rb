@@ -1,24 +1,25 @@
-# README
+# A Project Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Simple Blog-structured Project website built on Ruby on Rails.
 
-Things you may want to cover:
+##Gems used
 
-* Ruby version
+* Devise
 
-* System dependencies
+* Paperclip
 
-* Configuration
+##Project contents
 
-* Database creation
+###Controllers
 
-* Database initialization
+* Articles
 
-* How to run the test suite
+* Comments
 
-* Services (job queues, cache servers, search engines, etc.)
+* Users
 
-* Deployment instructions
+###Other features
 
-* ...
+* Image support in Project
+
+* User Authentication required while editing/creating Project Entries
