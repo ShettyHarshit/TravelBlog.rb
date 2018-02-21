@@ -2,15 +2,15 @@
 
 A Simple Blog-structured Project website built on Ruby on Rails.
 
-##Gems used
+## Gems used
 
 * Devise
 
 * Paperclip
 
-##Project contents
+## Project contents
 
-###Controllers
+### Controllers
 
 * Articles
 
@@ -18,7 +18,7 @@ A Simple Blog-structured Project website built on Ruby on Rails.
 
 * Users
 
-###Other features
+### Other features
 
 * Image support in Project
 
