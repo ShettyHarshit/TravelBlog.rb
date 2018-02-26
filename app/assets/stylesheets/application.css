@@ -85,3 +85,7 @@ table td{
   left: 50%;
   width: 90vw;
 }
+
+.space-out{
+  padding: 10px;
+}
