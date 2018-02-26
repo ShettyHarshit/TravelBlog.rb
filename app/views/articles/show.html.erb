@@ -22,6 +22,13 @@
       <%= @article.created_at %>
     </p>
 
+    <% if @article.user&.email %>
+    <p>
+      <strong>Created at:</strong> 
+      <%= @article.user&.email  %>
+    </p>
+    <% end %>
+
     <p>
       <strong>Image:</strong>
       <img src=<%= @article.image.url :large %> />

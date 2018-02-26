@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-  # belongs_to: user
+  belongs_to :user
   # has_many :comments, dependent: :destroy
   validates :project, presence: true,
                     length: { minimum: 5 }
