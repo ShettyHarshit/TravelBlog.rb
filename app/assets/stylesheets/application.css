@@ -77,11 +77,11 @@ table td{
 
 #wrapper{
   background: #fff;
-  margin: 5%;
-  padding: 10vw;
+  margin: 5vw;
+  padding: 7vw;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
   /*height: 300px;*/
   top: 50%;
   left: 50%;
-  width: 80vw;
+  width: 90vw;
 }

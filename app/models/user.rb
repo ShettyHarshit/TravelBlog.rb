@@ -7,4 +7,5 @@ class User < ApplicationRecord
       :styles => { :medium => "300x300>" }, 
       :default_url => "/images/:style/missing.png" # <= you see ?
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
+  # has_many:articles
 end
