@@ -8,6 +8,8 @@ A Simple Blog-structured Project website built on Ruby on Rails.
 
 * Paperclip
 
+* Pundit
+
 ## Project contents
 
 ### Controllers
