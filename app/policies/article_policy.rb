@@ -12,11 +12,19 @@ class ArticlePolicy < ApplicationPolicy
     true
   end
 
+def create?
+    user.present?
+  end
+
   def update?
     user.present? && user == article.user
   end
 
   def edit?
+    user.present? && user == article.user
+  end
+
+  def destroy?
     user.present? && user == article.user
   end
 
