@@ -4,41 +4,51 @@ class ArticlesController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 	# before_filter :authenticate_user!
 
+	# , except: :index
+	# after_action :verify_policy_scoped, only: :index
+
 	def index
 		@articles = Article.all
+		authorize @articles
 	end
 
 	def show
 		@article = Article.find(params[:id])
+		authorize @article		
 	end
 
 	def new
 		@article = Article.new
+		authorize @article
 	end
 	
 	def edit
-	  @article = Article.find(params[:id])
+		@article = Article.find(params[:id])
+		authorize @article
+		
 	end
-
+	
 	def create
 		@article = Article.new(article_params)
 		@article.user = current_user
-
+		
 		if @article.save
 			redirect_to @article
 		else
 			render 'new'
 		end
+		authorize @article
 	end
 
 	def update
 	  @article = Article.find(params[:id])
-	 
+		
 	  if @article.update(article_params)
 	    redirect_to @article
 	  else
 	    render 'edit'
 	  end
+		authorize @article		
 	end
 
 	def destroy
