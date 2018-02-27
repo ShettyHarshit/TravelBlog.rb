@@ -25,7 +25,7 @@ def create?
   end
 
   def destroy?
-    user.present? && user == article.user  
+    user.present? && user == article.user
   end
 
   def article
