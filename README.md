@@ -22,6 +22,8 @@ A Simple Blog-structured Project website built on Ruby on Rails.
 
 ### Other features
 
-* Image support in Project
+* Image support in Project - PaperClip
 
-* User Authentication required while editing/creating Project Entries
+* User Authentication required while editing/creating Project Entries - Devise
+
+* Entry Author can only Edit/Delete his own entries - Pundit
