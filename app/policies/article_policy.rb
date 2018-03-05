@@ -8,6 +8,10 @@ class ArticlePolicy < ApplicationPolicy
     true
   end
 
+  def api?
+    true
+  end
+
   def show?
     true
   end

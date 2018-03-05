@@ -11,6 +11,12 @@ class ArticlesController < ApplicationController
 		@articles = Article.all
 		authorize @articles
 	end
+	
+	def api
+		@articles = Article.all
+		render :json => @articles
+		authorize @articles
+	end
 
 	def show
 		@article = Article.find(params[:id])
