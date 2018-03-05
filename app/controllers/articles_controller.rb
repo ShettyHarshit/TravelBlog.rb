@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
 
 	# http_basic_authenticate_with name: "kira", password: "hellokira", except: [:index, :show]
-	before_action :authenticate_user!, except: [:index, :show]
+	before_action :authenticate_user!, except: [:index, :show, :api]
 	# before_filter :authenticate_user!
 
 	# , except: :index
@@ -14,8 +14,8 @@ class ArticlesController < ApplicationController
 	
 	def api
 		@articles = Article.all
-		render :json => @articles
 		authorize @articles
+		render :json => @articles
 	end
 
 	def show
