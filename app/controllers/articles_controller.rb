@@ -9,28 +9,28 @@ class ArticlesController < ApplicationController
 
 	def index
 		@articles = Article.all
-		authorize @articles
+		# authorize @articles
 	end
 	
 	def api
 		@articles = Article.all
-		authorize @articles
+		# authorize @articles
 		render :json => @articles
 	end
 
 	def show
 		@article = Article.find(params[:id])
-		authorize @article		
+		# authorize @article		
 	end
 
 	def new
 		@article = Article.new
-		authorize @article
+		# authorize @article
 	end
 	
 	def edit
 		@article = Article.find(params[:id])
-		authorize @article
+		# authorize @article
 		
 	end
 	
@@ -54,7 +54,7 @@ class ArticlesController < ApplicationController
 	  else
 	    render 'edit'
 	  end
-		authorize @article		
+		# authorize @article		
 	end
 
 	def destroy
@@ -62,7 +62,7 @@ class ArticlesController < ApplicationController
 	  @article.destroy
 	 
 		redirect_to articles_path
-		authorize @article
+		# authorize @article
 	end
 
 	private
