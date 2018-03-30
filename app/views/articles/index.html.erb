@@ -4,22 +4,22 @@
 <body>
 <center>
  <div id="wrapper">
-<h1>Project</h1>
- <%= link_to 'New article', new_article_path %>
+<h1>My Adventures</h1>
+ <%= link_to 'New Post', new_article_path %>
  <br>
  <%= notice%>
  <%= alert%>
 <table>
   <tr>
-    <th>Project Name</th>
-    <th>Languages</th>
+    <th>Post Title</th>
+    <th>Location</th>
     <th>Description</th>
   </tr>
  
   <% @articles.each do |article| %>
     <tr>
       <td><%= article.project %></td>
-      <td><%= article.languages %></td>
+      <td><%= article.location %></td>
       <td><%= article.description %></td>
       <td><%= link_to 'Show', article_path(article) %></td>
       <% if article.user&.email %>
