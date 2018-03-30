@@ -1,6 +1,6 @@
-# A Project Blog
+# A Travel Blog
 
-A Simple Blog-structured Project website built on Ruby on Rails.
+A Simple Travel Blog-structured Project built on Ruby on Rails.
 
 ## Gems used
 
@@ -14,9 +14,7 @@ A Simple Blog-structured Project website built on Ruby on Rails.
 
 ### Controllers
 
-* Articles
-
-* Comments
+* Blog Posts
 
 * Users
 
